@@ -1,10 +1,39 @@
-# Logistic Regression Binary Classification
+# Logistic Regression - Binary Classification
 
-This project implements a binary classification model using Logistic Regression to predict whether a tumor is malignant or benign.
+## Objective
+Build a binary classification model using Logistic Regression to predict whether a tumor is malignant or benign.
 
-The dataset was cleaned, encoded, and standardized before splitting into training and testing sets.  
-Model performance was evaluated using confusion matrix, precision, recall, and ROC-AUC score.
+## Dataset
+Breast Cancer Wisconsin Dataset  
+Target Variable:
+- M (Malignant)
+- B (Benign)
 
-The project also includes ROC curve visualization and threshold tuning for performance analysis.
+## Tools Used
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
 
-Tools used: Python, Pandas, NumPy, Scikit-learn, Matplotlib.
+## Steps Performed
+1. Loaded dataset in Jupyter Notebook.
+2. Removed unnecessary columns (`id`, `Unnamed: 32`).
+3. Converted diagnosis into binary values (M=1, B=0).
+4. Split data into training and testing sets.
+5. Standardized features using StandardScaler.
+6. Trained Logistic Regression model.
+7. Evaluated using:
+   - Accuracy
+   - Confusion Matrix
+   - Precision & Recall
+   - ROC-AUC
+
+## Result
+The model successfully classified tumors with high accuracy and good precision-recall balance.
+
+## Conclusion
+This task helped in understanding:
+- Binary Classification
+- Logistic Regression
+- Sigmoid Function
+- Model Evaluation Metrics
